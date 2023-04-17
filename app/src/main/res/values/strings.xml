@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Octocat</string>
+    <string name="user_hint">Enter a github user id</string>
+    <string name="search">Search</string>
+    <string name="no_network_title">No network</string>
+    <string name="no_network_descr">Please make sure you are connected to the internet.</string>
+    <string name="api_rate_limit_title">API rate limit exceeded</string>
+    <string name="api_rate_limit_descr">Please try again later.</string>
+    <string name="user_not_found_title">No user found</string>
+    <string name="user_not_found_descr">Maybe try a different user id?</string>
+    <string name="no_results_title">No results yet</string>
+    <string name="no_results_descr">Let\'s try to find something?</string>
+    <string name="empty_field">UserId field may not be empty</string>
+    <string name="stars_title">Stars count:</string>
+    <string name="updated_at_title">Updated at:</string>
+    <string name="fork_title">Forks count:</string>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="content_top_margin">128dp</dimen>
+    <dimen name="content_bottom_margin">48dp</dimen>
+
+</resources>

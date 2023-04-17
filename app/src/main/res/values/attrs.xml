@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="detailsCardViewStyle" format="reference" />
+
+    <declare-styleable name="DetailsCardView">
+        <attr name="titleTextColor" format="color|reference" />
+        <attr name="titleTextSize" format="dimension|reference" />
+        <attr name="titleText" format="string|reference" />
+
+        <attr name="bodyTextColor" format="color|reference" />
+        <attr name="bodyTextSize" format="dimension|reference" />
+        <attr name="bodyText" format="string|reference" />
+
+        <attr name="imageSrc" format="reference" />
+
+    </declare-styleable>
+
+</resources>

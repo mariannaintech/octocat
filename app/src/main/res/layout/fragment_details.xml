@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/repoRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIconTint="@color/white"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.octocat.ui.details.DetailsCardView
+                android:id="@+id/starsCountCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                app:bodyTextColor="@color/secondary_text_color"
+                app:bodyTextSize="32sp"
+                app:cardCornerRadius="15dp"
+                app:imageSrc="@drawable/star_group"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:titleText="@string/stars_title"
+                app:titleTextColor="@color/secondary_text_color"
+                app:titleTextSize="18sp"
+                tools:bodyText="125" />
+
+            <com.octocat.ui.details.DetailsCardView
+                android:id="@+id/forkCountCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                app:bodyTextColor="@color/secondary_text_color"
+                app:bodyTextSize="32sp"
+                app:cardCornerRadius="15dp"
+                app:imageSrc="@drawable/fork_group"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/starsCountCard"
+                app:titleText="@string/fork_title"
+                app:titleTextColor="@color/secondary_text_color"
+                app:titleTextSize="18sp"
+                tools:bodyText="75" />
+
+            <com.octocat.ui.details.DetailsCardView
+                android:id="@+id/updateAtCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                app:bodyTextColor="@color/secondary_text_color"
+                app:bodyTextSize="16sp"
+                app:cardCornerRadius="15dp"
+                app:imageSrc="@drawable/time_group"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/forkCountCard"
+                app:titleText="@string/updated_at_title"
+                app:titleTextColor="@color/secondary_text_color"
+                app:titleTextSize="18sp"
+                tools:bodyText="Wed Sep 25 22:35:43 PDT 2019" />
+
+            <TextView
+                android:id="@+id/descriptionValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="24dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/updateAtCard"
+                tools:text="Description" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

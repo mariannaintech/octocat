@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextInputLayout.OutlinedBox.Octocat" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/box_background_color</item>
+        <item name="android:textColorHint">@color/color_secondary</item>
+        <item name="boxStrokeColor">@color/box_stroke_color</item>
+        <item name="hintTextColor">@color/hint_text_color</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="errorIconTint">@color/error_tint</item>
+        <item name="boxStrokeErrorColor">@color/error_tint</item>
+        <item name="errorTextColor">@color/error_tint</item>
+        <item name="suffixTextColor">@color/error_tint</item>
+    </style>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_primary">#3E3E40</color>
+    <color name="color_secondary">#DDDDDD</color>
+    <color name="scroll_bcg_card_color">#40000000</color>
+
+<!-- Text   -->
+    <color name="disable_text_color">#BCBCBC</color>
+    <color name="primary_text_color">@color/white</color>
+    <color name="secondary_text_color">#D7D7D7</color>
+
+<!-- Card  -->
+    <color name="card_background_color">#424242</color>
+
+    <!--  TextInputLayout  -->
+    <color name="box_background_color">#424242</color>
+    <color name="box_stroke_color">#80FFFFFF</color>
+    <color name="hint_text_color">#CCFFFFFF</color>
+    <color name="error_tint">#99FF8686</color>
+
+</resources>
